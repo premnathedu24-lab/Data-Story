@@ -129,7 +129,3 @@ These limits are intentionally retained for predictable local resource use. Exce
 - `tests/` — automated unit tests and synthetic integration checks.
 - `examples/` — optional scripts demonstrating predictions from trusted exported model files.
 - `Dockerfile` — container build definition; build/deployment must be verified locally.
-
-## GitHub status
-
-This source tree is organized for review and source control. It does not create a GitHub repository or publish/deploy the application. Create an empty GitHub repository, review the staged files, then push the project using Git.

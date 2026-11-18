@@ -85,10 +85,18 @@ hr{border-color:var(--ds-border)}
 
 st.title('Data Story')
 st.markdown('**From client CSV to data insights, trained models and actionable prediction outputs.**')
-st.caption('A local-first analytics and ML workbench for freelancers and businesses.')
+st.caption('A web-based analytics and ML workbench for freelancers and businesses.')
 with st.sidebar:
     st.header('Workspace')
-    st.write('🛡️ Local processing · uploaded data is not sent to an external model provider.')
+    st.write(
+    '🔒 Session-based processing · uploaded datasets are processed '
+    'on the application server and are not sent to external AI providers.'
+)
+
+    st.caption(
+    'Uploaded files are held temporarily in memory, not saved to '
+    'permanent storage. Use synthetic or non-sensitive data.'
+)
     st.caption('CSV limits: 5 MB · 10,000 rows · 30 columns')
     if st.button('Load built-in demo dataset', use_container_width=True):
         st.session_state['demo_data'] = DEMO
